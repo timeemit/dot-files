@@ -1,0 +1,12 @@
+[user]
+	name = TimeEmit
+	email = LiamNorris1231853211@gmail.com
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[core]
+	editor = vim
+
+[alias]
+  hist = log --pretty=format:\"%h %cd | %s%d [%an]\" --graph --date=short
