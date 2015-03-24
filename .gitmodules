@@ -1,3 +1,6 @@
 [submodule ".vim"]
 	path = .vim
 	url = git@github.com:timeemit/dot-vim.git
+[submodule "Developer/zsh-syntax-highlighting"]
+	path = Developer/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
