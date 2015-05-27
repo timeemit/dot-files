@@ -62,6 +62,7 @@ export PS1='$(git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$f
 # Aliases #
 ###########
 alias ll='ls -al'
+alias now="date '+%Y%m%d%H%M%S'"
 
 #########################
 # Python Compiler Files #
