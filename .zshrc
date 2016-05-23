@@ -70,3 +70,8 @@ alias mux='tmuxinator'
 #########################
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONPATH=$HOME/Developer/hydra:$HOME/Developer/hydra/core
+
+######
+# GO #
+######
+export GOPATH=~/Developer/go
