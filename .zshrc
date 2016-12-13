@@ -74,6 +74,14 @@ export PYTHONPATH=$HOME/Developer/hydra:$HOME/Developer/hydra/core
 ######
 export GOPATH=~/Developer/go
 
+###########
+# Android #
+###########
+
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
 ################
 # Google Could #
 ################
