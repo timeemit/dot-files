@@ -29,8 +29,6 @@ export PATH
 # Give brew priority
 export PATH=/usr/local/bin:$PATH
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 ##########
 # Colors #
 ##########
@@ -75,3 +73,23 @@ export PYTHONPATH=$HOME/Developer/hydra:$HOME/Developer/hydra/core
 # GO #
 ######
 export GOPATH=~/Developer/go
+
+################
+# Google Could #
+################
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/liam/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/liam/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/liam/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/liam/google-cloud-sdk/completion.zsh.inc'
+fi
+
+#######
+# RVM #
+#######
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
