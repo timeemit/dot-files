@@ -76,6 +76,12 @@ export GOPATH=~/Developer/go
 export GOBIN=${GOPATH}/bin
 export PATH=$PATH:~/Developer/go/bin
 
+##########
+# Docker #
+##########
+echo "Docker IP: `docker-machine ip || docker-machine start`"
+eval $(docker-machine env)
+
 ###########
 # Android #
 ###########
