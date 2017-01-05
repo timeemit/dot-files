@@ -73,6 +73,8 @@ export PYTHONPATH=$HOME/Developer/hydra:$HOME/Developer/hydra/core
 # GO #
 ######
 export GOPATH=~/Developer/go
+export GOBIN=${GOPATH}/bin
+export PATH=$PATH:~/Developer/go/bin
 
 ###########
 # Android #
@@ -88,7 +90,7 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=/usr/local/lib:$PATH
 
 ################
-# Google Could #
+# Google Cloud #
 ################
 
 # The next line updates PATH for the Google Cloud SDK.
