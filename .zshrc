@@ -26,6 +26,10 @@ bindkey -e
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export PATH
 
+########
+# Brew #
+########
+
 # Give brew priority
 export PATH=/usr/local/bin:$PATH
 
