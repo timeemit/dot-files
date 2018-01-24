@@ -17,6 +17,7 @@ set cursorcolumn
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set cindent
 
 " File searching
 set wildmode=longest,full
@@ -28,6 +29,7 @@ set nocompatible
 set hlsearch
 set ignorecase
 set smartcase
+set incsearch
 
 " Turbux Configuration
 let g:turbux_command_prefix = 'zeus'
