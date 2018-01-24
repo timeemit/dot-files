@@ -11,6 +11,7 @@ colorscheme solarized
 set number
 set relativenumber
 set cursorline
+set cursorcolumn
 
 " Tabbing
 set expandtab
