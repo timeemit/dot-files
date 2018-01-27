@@ -83,8 +83,7 @@ export PATH=$PATH:~/Developer/go/bin
 ##########
 # Docker #
 ##########
-echo "Docker IP: `docker-machine ip || docker-machine start`"
-eval $(docker-machine env)
+echo "Docker IP: `docker-machine ip && eval $(docker-machine env)`"
 
 ###########
 # Android #
