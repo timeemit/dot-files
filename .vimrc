@@ -3,8 +3,13 @@ execute pathogen#infect()
 filetype plugin indent on
 au BufNewFile,BufRead *.pdf set filetype=eruby.html
 set backspace=indent,eol,start
+
+" Colors
+set t_Co=256
 syntax enable
-set background=light
+let g:solarized_termmtrans=1
+let g:solarized_termcolors=256
+set background=dark
 colorscheme solarized
 "
 " Gutter
