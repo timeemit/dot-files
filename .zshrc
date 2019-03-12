@@ -63,7 +63,7 @@ export PS1='$(git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$f
 ###########
 # Aliases #
 ###########
-alias ll='ls -alG'
+alias ll='ls -a -l -G --color=always'
 alias now="date '+%Y%m%d%H%M%S'"
 alias mux='tmuxinator'
 
