@@ -124,8 +124,25 @@ if [ -f /Users/liam/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/liam/google-cloud-sdk/completion.zsh.inc'
 fi
 
+###################
+# Zsh Autocomplete #
+###################
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle :compinstall filename '/Users/liam/.zshrc'
+
+autoload -Uz compinit
+compinit
+
+# End of lines added by compinstall
+
 #######
 # RVM #
 #######
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# The following lines were added by compinstall
