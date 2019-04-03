@@ -34,9 +34,6 @@ export PATH
 # See bash(1) for more options
 export HISTCONTROL=ignoreboth
 
-# append to the history file, don't overwrite it
-shopt -s histappend
-
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 export HISTSIZE=1000
 export HISTFILESIZE=2000
@@ -78,7 +75,7 @@ export PS1='$(git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$f
 ###########
 # Aliases #
 ###########
-alias ll='ls -a -l -G --color=always'
+alias ll='ls -alG'
 alias now="date '+%Y%m%d%H%M%S'"
 alias epoch="date +%s"
 alias mux='tmuxinator'
