@@ -8,8 +8,8 @@ set backspace=indent,eol,start
 set t_Co=256
 syntax enable
 let g:solarized_termmtrans=1
-let g:solarized_termcolors=256
-set background=light
+" let g:solarized_termcolors=256
+set background=dark
 colorscheme solarized
 "
 " Gutter
