@@ -9,7 +9,7 @@ set t_Co=256
 syntax enable
 let g:solarized_termmtrans=1
 " let g:solarized_termcolors=256
-set background=dark
+set background=light
 colorscheme solarized
 "
 " Gutter
