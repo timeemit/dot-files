@@ -114,7 +114,7 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 ########
 # Node #
 ########
-export PATH=/usr/local/lib:$PATH
+export PATH=~/bin:$PATH
 
 ################
 # Google Cloud #
