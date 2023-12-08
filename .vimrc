@@ -7,6 +7,7 @@ set backspace=indent,eol,start
 " Colors
 set t_Co=256
 syntax enable
+set re=0
 let g:solarized_termmtrans=1
 " let g:solarized_termcolors=256
 set background=light

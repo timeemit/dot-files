@@ -27,7 +27,7 @@ root: ~/Developer/socratic-garden
 # on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+# pre_window: export DATABASE_URL=postgres://$USER@localhost:5432/socratic-garden-local
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -48,4 +48,6 @@ windows:
   - engage: git status
   - editor: vim .
   - server: npm run dev
-    # - db: DATABASE_URL=postgres://$USER@localhost:5432/socratic-garden-local npm run studio
+  - db: NODE_ENV=local npm run studio
+  - metabase: cd ~/Developer/metabase && MB_JETTY_PORT=3001 java -jar metabase.jar
+

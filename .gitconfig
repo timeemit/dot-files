@@ -10,4 +10,4 @@
 	excludesfile = /Users/liam/.gitignore_global
 
 [alias]
-  hist = log --pretty=format:\"%h %cd | %s%d [%an]\" --graph --date=short
+  hist = log --pretty=format:\"%h %cd | %s%d [%an]\" --graph --left-right --date=short

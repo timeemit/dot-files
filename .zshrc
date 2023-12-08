@@ -144,11 +144,14 @@ zstyle :compinstall filename '/Users/liam/.zshrc'
 autoload -Uz compinit
 compinit
 
-# End of lines added by compinstall
+########
+# Java #
+########
+
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 #######
 # RVM #
 #######
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-# The following lines were added by compinstall
