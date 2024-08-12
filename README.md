@@ -2,7 +2,9 @@
 
 To install these files in your home directory, DO NOT `git clone...`
 
-Instead,
+First, make sure you have a ssh key with `ssh-keygen`.
+
+Then,
 
 ```
 git init
