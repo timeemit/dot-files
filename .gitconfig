@@ -8,6 +8,7 @@
 [core]
 	editor = vim
 	excludesfile = /Users/liam/.gitignore_global
-
 [alias]
-  hist = log --pretty=format:\"%h %cd | %s%d [%an]\" --graph --left-right --date=short
+  # hist = log --pretty=format:\"%h %Cblue%cd%Creset | %s%d [%an]\" --left-right --date=short
+  hist = log --oneline --graph
+  amend = commit --amend -C HEAD
