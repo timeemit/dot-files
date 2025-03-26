@@ -150,6 +150,13 @@ compinit
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+##########
+# Poetry #
+##########
+
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
+
 #######
 # RVM #
 #######
