@@ -68,3 +68,9 @@ let g:vim_markdown_frontmatter=1 " Recognize Jekyll Frontmatter
 " Highlight trailing whitespace and spaces before tabs
 highlight TrailingWhitespace ctermbg=darkred guibg=darkred
 let w:m2=matchadd('TrailingWhitespace', '\s\+$\| \+\ze\t')
+
+" Enable ALE fixers
+let g:ale_enabled = 1
+let g:ale_linters = {'python': ['flake8']}
+let g:ale_fixers = {'python': ['black'], '*': ['remove_trailing_lines', 'trim_whitespace']}
+let g:ale_fix_on_save = 1
