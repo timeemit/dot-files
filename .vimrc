@@ -1,8 +1,13 @@
 set term=screen-256color
-execute pathogen#infect()
+" execute pathogen#infect()
+set runtimepath^=~/.vim/bundle/*
 filetype plugin indent on
 au BufNewFile,BufRead *.pdf set filetype=eruby.html
 set backspace=indent,eol,start
+
+" Control-P
+let g:ctrlp_map = '<c-f>'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 
 " Colors
 set t_Co=256
