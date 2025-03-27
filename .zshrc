@@ -157,6 +157,12 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 fpath+=~/.zfunc
 autoload -Uz compinit && compinit
 
+
+##########
+# Direnv #
+##########
+
+eval "$(direnv hook zsh)"
 #######
 # RVM #
 #######
