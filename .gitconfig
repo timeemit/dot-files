@@ -12,3 +12,4 @@
   # hist = log --pretty=format:\"%h %Cblue%cd%Creset | %s%d [%an]\" --left-right --date=short
   hist = log --oneline --graph
   amend = commit --amend -C HEAD
+  nuke = clean -fdx

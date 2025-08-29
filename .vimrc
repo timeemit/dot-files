@@ -71,6 +71,15 @@ let w:m2=matchadd('TrailingWhitespace', '\s\+$\| \+\ze\t')
 
 " Enable ALE fixers
 let g:ale_enabled = 1
-let g:ale_linters = {'python': ['flake8']}
-let g:ale_fixers = {'python': ['black'], '*': ['remove_trailing_lines', 'trim_whitespace']}
+let g:ale_linters_explicit = 1
+let g:ale_linters = {'python': ['pyright']}
+let g:ale_fixers = {'python': ['black', 'isort'], '*': ['remove_trailing_lines', 'trim_whitespace']}
 let g:ale_fix_on_save = 1
+let g:ale_python_black_options = '--line-length 100'
+let g:ale_python_flake8_options = '--max-line-length 100 --ignore E501'
+
+" Recursive Grep
+set grepprg=ag\ --numbers\ --nogroup
+
+" \cp to Clipboard Copy the Current File Path
+nnoremap <leader>cp :let @+ = expand('%')<CR>
