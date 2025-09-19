@@ -158,21 +158,6 @@ export PATH="$HOME/.local/bin:$PATH"
 fpath+=~/.zfunc
 autoload -Uz compinit && compinit
 
-##########
-# Direnv #
-##########
-
-eval "$(direnv hook zsh)"
-
-#########
-# Pyenv #
-#########
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-eval "$(pyenv virtualenv-init -)"
-
 #######
 # RVM #
 #######
