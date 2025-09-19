@@ -48,6 +48,6 @@ windows:
   - engage: git status
   - editor: vim .
   - server: npm run dev
-  - db: npm run blitz prisma -- studio
+  - pg: npm run prisma -- studio
   - metabase: cd ~/Developer/metabase && MB_JETTY_PORT=3001 java -jar metabase.jar
 
